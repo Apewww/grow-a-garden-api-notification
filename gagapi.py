@@ -38,8 +38,6 @@ intents = discord.Intents.default()
 intents.message_content = True
 client = commands.Bot(command_prefix="!", intents=intents)
 
-
-
 def format_item_name(name):
     if name == "Master Sprinkler":
         return f"<:mastersprinkler:1398133364376080465> {name}"
@@ -55,6 +53,12 @@ def format_item_name(name):
         return f"<:zenegg:1398180049534062714> {name}"
     elif name == "Koi":
         return f"<:koipet:1398180073315766354> {name}"
+    elif name == "Level Up Lollipop":
+        return f"<:lolipopgear:1398254993202745445> {name}"
+    elif name == "Medium Treat":
+        return f"<:mediumtreatgear:1398255916499075082> {name}"
+    elif name == "Medium Toy":
+        return f"<:mediumtoygear:1398255931124355092> {name}"
     return f"- {name}"
 
 def combine_items_by_name(items):
